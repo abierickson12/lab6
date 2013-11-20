@@ -12,6 +12,8 @@ def main
   text = ARGV[1]
 
   # modify text accordingly
+  puts "Input some text, please"
+  text = $stdin.gets.chomp
   case modification
   when "--reverse"
     mod_text = reverse_mod text
